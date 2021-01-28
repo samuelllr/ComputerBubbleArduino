@@ -17,4 +17,4 @@ Esta imagem mostra como é o funcionamento de um algoritimo Bubble Soft.
 
 - Depois de carregar o código no Arduino abra a comunicação Serial e veja tudo funcionar.
 
-<img src="saimg.png"/>
+<img src="saimg.PNG"/>
