@@ -1,4 +1,3 @@
-
 char numbers[255] = {};
 char n1 , n2;
 byte mode = 0;
@@ -6,7 +5,8 @@ int localArray = -1;
 byte bugInvisivel = 1;
 int pararContagem = -1;
 byte modeFast = 0; 
-int tempDelay = 300;
+int tempDelay = 400;
+byte reverse = 0;
 
 void setup() {
 
@@ -17,6 +17,7 @@ void setup() {
   Serial.println( " | --> Inicia a organização do Array. " );
   Serial.println( " ! --> Ativar modo Rápido/Desativar. " );
   Serial.println( " # --> Limpar Array. " );
+  Serial.println( " @ --> Muda o modo de organização. Decrecente/Crescente. " );
   Serial.println( " " );
   delay( 2000 );
   Serial.println( " [ Sistema Pronto para adicionar dados ] " );
@@ -32,15 +33,18 @@ void loop() {
     
     if( serial > ' ' ){
 
-      if( ( serial != '|' )&&( serial != '?' )&&( serial != ' ' )&&( serial != '!' )&&( serial != '#' ) ){ 
+      if( ( serial != '|' )&&( serial != '?' )&&( serial != ' ' )&&( serial != '!' )&&( serial != '#' )&&( serial != '@' ) ){ 
 
         Serial.println( "  ------[...]------  " );
         Serial.print( " Adiconado: " );
         Serial.println( serial );
 
         localArray++;
-        Serial.print( " Posição a partir do 0: ");
-        Serial.println( localArray );
+        Serial.print( " Posição: ");
+        Serial.print( localArray );
+        Serial.print( " [ Total: " );
+        Serial.print( localArray + 1 );
+        Serial.println( " ]" );
         numbers[ localArray ] = serial;
 
         if( modeFast == 0 ){
@@ -77,7 +81,7 @@ void loop() {
             Serial.println( " " );
             Serial.println( " Modo Rápido desativado. ↻" );
             modeFast = 0; 
-            tempDelay = 300; 
+            tempDelay = 400; 
           }
         break;
         case '#' :
@@ -85,6 +89,17 @@ void loop() {
            Serial.println( " Array Limpo. ⟵" );
            memset( numbers , 0 , 255 );
            localArray = -1;
+        break;
+        case '@':
+          if( reverse == 0 ){
+            Serial.println( " " );
+            Serial.println( " Organização decrecente ativada. ⥦" );
+            reverse = 1;
+          }else{
+            Serial.println( " " );
+            Serial.println( " Organização crescente ativada. ⥦" );
+            reverse = 0;
+          }
         break;
       }
 
@@ -108,16 +123,35 @@ void start(){
      n1 = numbers[i];
      n2 = numbers[ i + bugInvisivel ];
 
-     if(  n1 > n2  ){
+     if( reverse == 0 ){
+     
+       if(  n1 > n2  ){
+  
+          numbers[i] = n2;
+          numbers[ i + bugInvisivel ] = n1;
+  
+          pararContagem = -1;
+         
+       }else{
+          pararContagem++;
+       }
 
-        numbers[i] = n2;
-        numbers[ i + bugInvisivel ] = n1;
+     }
 
-        pararContagem = -1;
-       
-     }else{
-        pararContagem++;
-     }     
+     if( reverse == 1 ){
+  
+       if(  n1 < n2  ){
+  
+          numbers[i] = n2;
+          numbers[ i + bugInvisivel ] = n1;
+  
+          pararContagem = -1;
+         
+       }else{
+          pararContagem++;
+       }
+
+     }
     
   }
 
