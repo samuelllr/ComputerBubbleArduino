@@ -15,7 +15,7 @@ Esta imagem mostra como é o funcionamento de um algoritimo Bubble Soft.
 
 ### Pastas
 
-- code : Nesta pasta esta o código para você carregar no Arduino.
+- code : Nesta pasta esta o código para você carregar no Arduino utilizando o Arduino IDE.
 
 ### Executando 
 
