@@ -27,6 +27,6 @@ Esta imagem mostra como é o funcionamento de um algoritimo Bubble Soft.
 
 **********
 
-<video  width="1092" height="614">
-<source src="https://shamky.000webhostapp.com/video/video.mp4" type="video/mp4">
-</video>
+### Vídeo
+
+Aqui esta um <a href="https://shamky.000webhostapp.com/video/video.mp4">vídeo</a> mostrando tudo funcionando.
