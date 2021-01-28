@@ -8,3 +8,13 @@ Algoritmo que organiza de forma crescente ou decrecente.
 <img src="bsi.gif"/>
 
 Esta imagem mostra como é o funcionamento de um algoritimo Bubble Soft.
+
+### Pastas
+
+- code : Nesta pasta esta o código para você carregar no Arduino.
+
+### Executando 
+
+- Depois de carregar o código no Arduino abra a comunicação Serial e veja tudo funcionar.
+
+<img src="saimg.png"/>
