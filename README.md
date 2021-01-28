@@ -1,4 +1,4 @@
-# ComputerBlubbleArduino
+# ComputerBubbleArduino
 
 ![GitHub](https://img.shields.io/github/license/samuelllr/ComputerBubbleArduino)
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=samuelllr/ComputerBubbleArduino)
