@@ -5,9 +5,6 @@ Este é um projeto que executa o algoritimo Bubble Soft no arduino, como se foss
 ## 𝐵𝑢𝑏𝑏𝑙𝑒 𝑆𝑜𝑓𝑡
 
 Algoritmo que organiza de forma crescente ou decrecente.
-<img src="Bubble-soft.gif"/>
+<img src="bsi.gif"/>
 
 Esta imagem mostra como é o funcionamento de um algoritimo Bubble Soft.
-
-
-
