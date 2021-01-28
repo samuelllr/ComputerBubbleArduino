@@ -20,5 +20,7 @@ Esta imagem mostra como é o funcionamento de um algoritimo Bubble Soft.
 ### Executando 
 
 - Depois de carregar o código no Arduino abra a comunicação Serial e veja tudo funcionar.
+- É possível organizar letras e números.
+- Esta programado apenas para 255 caractéres.
 
 <img src="saimg.PNG"/>
