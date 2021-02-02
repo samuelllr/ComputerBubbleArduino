@@ -1,5 +1,6 @@
+// Variáveis
 char numbers[255] = {};
-char n1 , n2;
+char n1 , n2;           
 byte mode = 0;
 int localArray = -1;
 byte bugInvisivel = 1;
@@ -12,6 +13,7 @@ void setup() {
 
   Serial.begin( 9600 );
 
+  // Intro
   Serial.println( "---------------- [   ♾ BUBBLE SOFT AGORITHM COMPUTER ♾ ] ----------------" );
   Serial.println( " ? --> Apresenta o Array. " );
   Serial.println( " | --> Inicia a organização do Array. " );
@@ -60,6 +62,7 @@ void loop() {
 
       }
 
+      // Funções
       switch ( serial ){
         case '|': mode = 1; Serial.println( " " ); Serial.println( " INICIANDO TRABALHO..." ); delay(2000); break;
         case '?':
@@ -111,6 +114,7 @@ void loop() {
 
 }
 
+// Bubble Soft
 void start(){
 
   Serial.println( " " );
