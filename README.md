@@ -32,6 +32,7 @@ Esta imagem mostra como é o funcionamento de um algoritimo Bubble Soft.
 - Modo Lento.
 - Modo Rápido.
 - Reset.
+- 255 máximo caracteres.
 
 **********
 
