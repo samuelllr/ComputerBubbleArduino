@@ -1,13 +1,13 @@
 // Variáveis
 char numbers[255] = {};
 char n1 , n2;           
-byte mode = 0;
 int localArray = -1;
-byte bugInvisivel = 1;
 int pararContagem = -1;
-byte modeFast = 0; 
 int tempDelay = 400;
 byte reverse = 0;
+byte mode = 0;
+byte bugInvisivel = 1;
+byte modeFast = 0; 
 
 void setup() {
 
