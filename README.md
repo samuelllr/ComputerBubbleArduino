@@ -23,6 +23,8 @@ Esta imagem mostra como é o funcionamento de um algoritimo Bubble Soft.
 - É possível organizar letras e números.
 - Esta programado apenas para 255 caractéres.
 
+<div align="center"><img src="saimg.PNG"/></div>
+
 ### Funções
 
 - Organização crecente.
@@ -30,8 +32,6 @@ Esta imagem mostra como é o funcionamento de um algoritimo Bubble Soft.
 - Modo Lento.
 - Modo Rápido.
 - Reset.
-
-<img src="saimg.PNG"/>
 
 **********
 
