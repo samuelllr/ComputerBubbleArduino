@@ -4,7 +4,7 @@
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=samuelllr/ComputerBubbleArduino)
 ![Twitter Follow](https://img.shields.io/twitter/follow/Samuelllr_htcod?style=social)
 
-Este é um projeto que executa o algoritimo Bubble Soft no arduino, como se fosse um mini-computador. Ele ainda esta em atualização precisa de modificaçoes.
+Este é um projeto que executa o algoritimo Bubble Soft no arduino, como se fosse um mini-computador.
 
 ## 𝐵𝑢𝑏𝑏𝑙𝑒 𝑆𝑜𝑓𝑡
 
@@ -22,6 +22,14 @@ Esta imagem mostra como é o funcionamento de um algoritimo Bubble Soft.
 - Depois de carregar o código no Arduino abra a comunicação Serial e veja tudo funcionar.
 - É possível organizar letras e números.
 - Esta programado apenas para 255 caractéres.
+
+### Funções
+
+- Organização crecente.
+- Organização decrecente.
+- Modo Lento.
+- Modo Rápido.
+- Reset.
 
 <img src="saimg.PNG"/>
 
